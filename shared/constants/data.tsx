@@ -1,3 +1,4 @@
+// Main page
 export const communities = [
   {
     name: "Celtic Druids",
