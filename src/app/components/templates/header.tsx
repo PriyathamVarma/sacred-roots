@@ -16,7 +16,7 @@ export const Header = () => {
                 <TreePine className="w-4 h-4 text-amber-600 absolute top-2 left-2" />
               </div>
               <span className="text-xl font-semibold text-stone-800">
-                Sacred Roots
+                {process.env.NEXT_PUBLIC_APP_NAME || "Sacred Roots"}
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
