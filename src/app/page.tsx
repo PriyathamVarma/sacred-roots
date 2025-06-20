@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Header } from "./components/templates/header";
 import { communities, recentWisdom } from "../../shared/constants/data";
+import Link from "next/link";
 
 const Homepage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -54,9 +55,12 @@ const Homepage = () => {
             connection between humanity and the natural world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all transform hover:scale-105">
+            <Link
+              href="/register/signup"
+              className="bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all transform hover:scale-105"
+            >
               Join the Movement
-            </button>
+            </Link>
             <button className="border-2 border-stone-400 text-stone-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-all">
               Explore Traditions
             </button>
@@ -253,9 +257,12 @@ const Homepage = () => {
             sacred circle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-stone-100 transition-all transform hover:scale-105">
+            <Link
+              href="/register/signup"
+              className="bg-white text-emerald-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-stone-100 transition-all transform hover:scale-105"
+            >
               Start Your Community
-            </button>
+            </Link>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-emerald-600 transition-all">
               Explore Traditions
             </button>
@@ -288,9 +295,12 @@ const Homepage = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <Link
+                    href="/register/signup"
+                    className="hover:text-white transition-colors"
+                  >
                     Start a Community
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">

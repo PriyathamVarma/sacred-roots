@@ -16,7 +16,9 @@ export const Header = () => {
                 <TreePine className="w-4 h-4 text-amber-600 absolute top-2 left-2" />
               </div>
               <span className="text-xl font-semibold text-stone-800">
-                {process.env.NEXT_PUBLIC_APP_NAME || "Sacred Roots"}
+                <Link href="/">
+                  {process.env.NEXT_PUBLIC_APP_NAME || "Sacred Roots"}
+                </Link>
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -38,12 +40,12 @@ export const Header = () => {
               >
                 About
               </a>
-              <a
-                href="#join"
+              <Link
+                href="/register/signup"
                 className="text-stone-700 hover:text-emerald-600 transition-colors"
               >
                 Join
-              </a>
+              </Link>
             </div>
             <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
               Get Started
